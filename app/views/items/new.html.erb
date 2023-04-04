@@ -1,5 +1,20 @@
-<h1>New Item</h1>
+<style>
+#center {
+  border-radius: 25px;
+  background: lightgray;
+  padding: 10px; 
+  width: 600px; 
+  margin: auto; 
+}
+</style>
+<header class="pb-3 mb-4 border-bottom"> </header>
+<h1 style="text-align:center;">New Item</h1>
 
-<%= render 'form', item: @item %>
+<div id="center">
+  <div class="container-sm" >
+    <%= render 'form', item: @item %>
+    <%= link_to 'Back', items_path, class: "btn btn-secondary", style:"color:white"  %>
+  </div>
+</div>
 
-<%= link_to 'Back', items_path %>
+<footer class="pb-3 mb-4 border-bottom"> </footer>

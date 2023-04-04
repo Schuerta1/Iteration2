@@ -1,6 +1,21 @@
-<h1>Editing Item</h1>
+<style>
+#center {
+  border-radius: 25px;
+  background: lightgray;
+  padding: 10px; 
+  width: 600px; 
+  margin: auto; 
+}
+</style>
+<header class="pb-3 mb-4 border-bottom"> </header>
+<h1 style="text-align:center;">Editing Item</h1>
 
-<%= render 'form', item: @item %>
+<div id="center">
+  <div class="container-sm" >
+    <%= render 'form', item: @item %>
 
-<%= link_to 'Show', @item %> |
-<%= link_to 'Back', items_path %>
+    <%= link_to 'Show', @item, class: "btn btn-secondary", style:"color:white"  %> 
+    <%= link_to 'Back', items_path, class: "btn btn-secondary", style:"color:white"  %>
+  </div>
+</div>
+<footer class="pb-3 mb-4 border-bottom"> </footer>

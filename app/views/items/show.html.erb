@@ -1,34 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @item.price %>
-</p>
+<div class="container py-4">
+  <header class="pb-3 mb-4 border-bottom"> </header>
 
-<p>
-  <strong>Description:</strong>
-  <%= @item.description %>
-</p>
+  <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h1 class="display-5 fw-bold"><%= @item.title %></h1>
+          <p class="col-md-8 fs-4"><%= @item.description %></p>
+          <p class="col-sm-8 fs-8", style="line-height:2px">Size: <%= @item.size  %></p>
+          <p class="col-sm-8 fs-8", style="line-height:2px">Color:<%= @item.color %></p>
+          <p class="col-sm-8 fs-8", style="line-height:2px">Type: <%= @item.clothingType  %></p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2 style="text-align:center;">$<%= @item.price %></h2>
+        </div>
+      </div>
+    </div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @item.title %>
-</p>
+    <br/>
+    <%= link_to 'Edit', edit_item_path(@item), class:"btn btn-light", style:"color:black" %>
+    <%= link_to 'Back', items_path , class:"btn btn-secondary", style:"color:black"%>
 
-<p>
-  <strong>Size:</strong>
-  <%= @item.size %>
-</p>
-
-<p>
-  <strong>Clothingtype:</strong>
-  <%= @item.clothingType %>
-</p>
-
-<p>
-  <strong>Color:</strong>
-  <%= @item.color %>
-</p>
-
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+    <footer class="pb-3 mb-4 border-bottom"> </footer>
+</div>

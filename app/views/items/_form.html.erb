@@ -13,35 +13,35 @@
 
   <div class="field">
     <%= form.label :price %>
-    <%= form.text_field :price %>
+    <%= form.text_field :price, class: "form-control"  %>
   </div>
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_field :description %>
+    <%= form.text_field :description, class: "form-control"  %>
   </div>
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class: "form-control"  %>
   </div>
 
   <div class="field">
     <%= form.label :size %>
-    <%= form.text_field :size %>
+    <%= form.text_field :size, class: "form-control"  %>
   </div>
 
   <div class="field">
     <%= form.label :clothingType %>
-    <%= form.text_field :clothingType %>
+    <%= form.text_field :clothingType, class: "form-control"  %>
   </div>
 
   <div class="field">
     <%= form.label :color %>
-    <%= form.text_field :color %>
+    <%= form.text_field :color, class: "form-control"  %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="button" style="padding-bottom: 10px">
+    <%= form.button t('Update Project'), class: "btn btn-primary" %>
   </div>
 <% end %>
