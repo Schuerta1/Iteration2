@@ -1,6 +1,7 @@
 require "rails_helper"
 
 RSpec.describe ItemsController, :type => :controller do
+    login_user
     describe "test web requests" do
         context "GET #index" do
             it "returns a success response" do
@@ -16,12 +17,12 @@ RSpec.describe ItemsController, :type => :controller do
             end
         end
 
-        #context "GET #show 2" do
-        #    let!(:item) { Item.create(title: "Test title", description: "Test description") }
-        #    it "returns a success response" do
-        #        get :show, params: {id: item }
-        #        expect(response).to be_success
-        #    end
-        #end
+        context "GET #show 2" do
+            let!(:item) { Item.create(title: "Test title", description: "Test description") }
+            it "returns a success response" do
+                get :show, params: {id: item }
+                expect(response).to be_successful
+            end
+        end
     end
 end

@@ -5,49 +5,50 @@
         "lines": [
           1,
           1,
-          null,
-          null,
           1,
-          2,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          2,
-          1,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
           null,
           null,
           1,
           3,
-          3,
-          2,
+          null,
+          null,
+          null,
           1,
           null,
-          4,
-          2,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
           null,
           null,
           null,
@@ -65,12 +66,12 @@
           1,
           null,
           1,
-          8,
+          0,
           null,
           null,
           null,
           1,
-          4,
+          0,
           null,
           null
         ]
@@ -82,13 +83,6 @@
         ]
       },
       "/root/Iteration2/app/models/item.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/root/Iteration2/app/models/application_record.rb": {
         "lines": [
           1,
           1,
@@ -153,8 +147,29 @@
         ],
         "branches": {
         }
+      },
+      "/root/Iteration2/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/root/Iteration2/app/models/user.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1680914117
+    "timestamp": 1681790443
   }
 }
