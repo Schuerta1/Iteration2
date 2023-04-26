@@ -1,16 +1,41 @@
-<h2>Forgot your password?</h2>
+<style>
+#center {
+  border-radius: 25px;
+  background: lightgray;
+  padding: 10px; 
+  width: 600px; 
+  margin: auto; 
+}
+</style>
+
+<header class="pb-3 mb-4 border-bottom"> </header>
+<div id="center">
+  <div class="container-sm" >
+  <h2 style="text-align:center;">Forgot your password?</h2>
 
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= render "users/shared/error_messages", resource: resource %>
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control"  %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
+    <%= f.submit "Send me reset password instructions", class: "btn btn-primary w-100" %>
   </div>
 <% end %>
 
-<%= render "users/shared/links" %>
+<div class="actions d-flex align-items-center justify-content-center", style="padding-top: 15px;">
+  <%= link_to "Login", new_user_session_path, :class => 'btn btn-outline-secondary w-100', style:"color:black"  %>
+</div>
+
+<div class="actions d-flex align-items-center justify-content-center">
+  <%= link_to "Create an account", new_user_registration_path, :class => 'btn btn-outline-secondary w-100', style:"color:black"  %> 
+</div>
+
+
+</div>
+</div>
+
+<footer class="pb-3 mb-4 border-bottom"> </footer>
