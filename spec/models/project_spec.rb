@@ -15,7 +15,7 @@ describe "item Attribute Requirements on Create", :type => :model do
       expect(item.save).to eq(false)
     end
     it "should be able to save item when have description and title" do
-        item = Item.new(title: "Title", description: "Content of the description")
+        item = Item.new(title: "Title", description: "Content of the description", color: "color", size: "M", clothingType: "clothes", price: "5")
       expect(item.save).to eq(true)
     end
   end

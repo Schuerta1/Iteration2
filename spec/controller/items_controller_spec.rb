@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe ItemsController, :type => :controller do
     login_user
     let(:valid_attributes) {
-        { :title => "Test title!", :description => "This is a test description" }
+        { :title => "Test title!", :description => "This is a test description", :price => "1", :size => "test size", :color => "This is a test color", :clothingType => "This is a test type" }
     }
 
     let(:valid_session) { {} }
