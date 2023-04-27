@@ -5,13 +5,13 @@ RSpec.feature "Items", type: :feature do
         before(:each) do
             user = FactoryBot.create(:user)
             login_as(user)
-            visit new_project_path
+            visit new_item_path
           end
       
         it "should succeed" do
             visit 'http://localhost:3000/items/new'
-            fill_in "Description", with: "New description content"
             fill_in "Title", with: "New title content"
+            fill_in "Description", with: "New description content"
             click_button "Update Project"
             expect(page).to have_content("Item was successfully created")
         end
@@ -21,7 +21,7 @@ RSpec.feature "Items", type: :feature do
         before(:each) do
             user = FactoryBot.create(:user)
             login_as(user)
-            visit new_project_path
+            visit new_item_path
           end
       
       let(:item) { Item.create(title: "Test title", description: "Test content") }

@@ -1,12 +1,7 @@
 require 'rails_helper'
 
-# Change this ItemsController to your project
-RSpec.describe ItemsController, type: :controller do
-
+RSpec.describe ItemsController, :type => :controller do
     login_user
-
-    # This should return the minimal set of attributes required to create a valid
-    # Item. As you add validations to Item, be sure to adjust the attributes here as well.
     let(:valid_attributes) {
         { :title => "Test title!", :description => "This is a test description" }
     }
